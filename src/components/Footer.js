@@ -13,7 +13,7 @@ export const Footer = () => {
           <MailchimpForm />
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
-            <p style={{color:"white", marginLeft:"10px", marginTop:"-10px", fontSize:"30px", fontFamily:"FilmNoir"}}>GeyaDevs</p>
+            <p style={{color:"white", alignContent:"center", marginTop:"-10px", fontSize:"30px", fontFamily:"FilmNoir"}}>GeyaDevs</p>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
