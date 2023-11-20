@@ -62,8 +62,7 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2 style={{marginLeft:"200px"}}>S E N D</h2>
-                <h2>YOUR MESSAGES TO ME!</h2>
+                <h2>CONNECT WITH ME!</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
