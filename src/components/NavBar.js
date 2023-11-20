@@ -38,7 +38,7 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
-            <p style={{color:"white", marginLeft:"10px", fontFamily:"FilmNoir"}}>GeyaDevs</p>
+            <p style={{color:"white", alignContent:"center", fontFamily:"FilmNoir"}}>GeyaDevs</p>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
