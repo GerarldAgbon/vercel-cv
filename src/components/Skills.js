@@ -35,7 +35,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>S K I L L S E T</h2>
-                        <p>Front-end development involves creating visually appealing, user-friendly websites using HTML, CSS, and JavaScript.<br></br>SEO writing and analytics optimize content for search engines, while UI/UX design creates intuitive, user-centric interfaces that align with business goals and brand identity.</p>
+                        <p>Front-end development involves creating visually appealing websites using HTML, CSS, and JavaScript, optimizing content for search engines, and designing intuitive interfaces that align with business goals and brand identity.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
