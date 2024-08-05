@@ -31,6 +31,11 @@ export const Projects = () => {
       description: "Centralized Document Management Processing Platform",
       imgUrl: magkahiosa,
     },
+    {
+      title: "Influencerslake:",
+      description: "Centralized Document Management Processing Platform",
+      imgUrl: magkahiosa,
+    },
   ];
 
   const ongoingProjects = [
