@@ -7,15 +7,15 @@ import napoles from "../assets/img/napoles.png";
 import portfolio from "../assets/img/portfolio.jpg";
 import magkahiosa from "../assets/img/magkahiosa.jpg";
 import colorSharp2 from "../assets/img/banner-bg.png";
-import ml from "../assets/img/ml.jpg";
-import ai from "../assets/img/ai.jpg";
-import cybersec from "../assets/img/cybersec.jpg";
+import influencerslake from "../assets/img/influencerslake.png";
+import mtpines from "../assets/img/mt-pines.png";
+import umttipmo from "../assets/img/um-ttipmo.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const finishedProjects = [
+  const localProjects = [
     {
       title: "Napoles Dental Clinic Website",
       description: "Design, Development & Deployment",
@@ -33,12 +33,22 @@ export const Projects = () => {
     },
     {
       title: "Influencerslake:",
-      description: "Centralized Document Management Processing Platform",
-      imgUrl: magkahiosa,
+      description: "A Social Media Engagement Growth Booster Tool",
+      imgUrl: influencerslake,
+    },
+    {
+      title: "Mt. Pines Spring Resort:",
+      description: "Spring Resort Website and Booking Website",
+      imgUrl: mtpines,
+    },
+    {
+      title: "UM-TTIPMO",
+      description: "University of Mindanao Technology Transfer and Intellectual Property Management Office",
+      imgUrl: umttipmo,
     },
   ];
 
-  const ongoingProjects = [
+  const internationalProjects = [
     {
       title: "Eagle Property Management",
       description: "Content Writing and SEO Analytics",
@@ -56,24 +66,6 @@ export const Projects = () => {
     },
   ];
 
-  const futureProjects = [
-    {
-      title: "Machine Learning",
-      description: "Deep Learning and Neural Networks",
-      imgUrl: ml,
-    },
-    {
-      title: "Artificial Intelligence",
-      description: "Human Interactions in Machines",
-      imgUrl: ai,
-    },
-    {
-      title: "Cyber Security",
-      description: "Ethical Hacking ang Penetration Testing",
-      imgUrl: cybersec,
-    },
-  ];
-
   return (
     <section className="project" id="project">
       <Container>
@@ -87,24 +79,21 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Finished Projects</Nav.Link>
+                      <Nav.Link eventKey="first">Local Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">On-Going Projects</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Future Projects</Nav.Link>
+                      <Nav.Link eventKey="second">International Projects</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          finishedProjects.map((finishedProjects, index) => {
+                          finishedProjects.map((localProjects, index) => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...finishedProjects}
+                                {...localProjects}
                                 />
                             )
                           })
@@ -114,30 +103,16 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
-                          ongoingProjects.map((ongoingProjects, index) => {
+                          ongoingProjects.map((internationalProjects, index) => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...ongoingProjects}
+                                {...internationalProjects}
                                 />
                             )
                           })
                         }
                       </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <Row>
-                          {
-                            futureProjects.map((futureProjects, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...futureProjects}
-                                  />
-                              )
-                            })
-                          }
-                        </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
