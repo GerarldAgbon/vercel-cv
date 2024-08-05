@@ -89,7 +89,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          finishedProjects.map((localProjects, index) => {
+                          localProjects.map((localProjects, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -103,7 +103,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
-                          ongoingProjects.map((internationalProjects, index) => {
+                          internationalProjects.map((internationalProjects, index) => {
                             return (
                               <ProjectCard
                                 key={index}
